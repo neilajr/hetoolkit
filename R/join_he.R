@@ -170,7 +170,7 @@ join_he <- function(biol_data,
       dplyr::arrange(biol_site_id, Year, desc(Season)) %>%
       dplyr::mutate(FlowSeason = dplyr::case_when(Season == 'Autumn' ~ 'Summer',
                                         Season == 'Spring' ~ 'Winter')) %>%
-      dlyr::mutate(FlowSeason.L1 = 'Summer')
+      dplyr::mutate(FlowSeason.L1 = 'Summer')
 
   }
 
